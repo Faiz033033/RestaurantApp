@@ -1,12 +1,12 @@
-import React from "react";
-import Header from "./Components/UI/Header";
+import {Fragment}  from "react";
+import Header from "./Components/Layout/Header";
 
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Header/>
-    </div>
+    </Fragment>
   );
 }
 
