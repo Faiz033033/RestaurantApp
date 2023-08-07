@@ -5,7 +5,7 @@ const Input = (props) => {
   return (
     <div className={classes.input}>
       <label htmlFor={props.input.id}>{props.label}</label>
-      <input ref={props.inputRef} {...props.input} /> {/* Use inputRef prop */}
+      <input ref={props.inputRef} {...props.input} />
     </div>
   );
 };

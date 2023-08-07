@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import Input from '../../UI/Input'; // Make sure the path to your Input component is correct
+import Input from '../../UI/Input';
 import classes from './MealItemForm.module.css';
 
 const MealsForm = (props) => {
@@ -22,9 +22,9 @@ const MealsForm = (props) => {
 
   return (
     <form className={classes.form} onSubmit={submitHandler}>
-      {/* Pass the ref directly to the Input component */}
+      
       <Input
-        inputRef={amountInputRef} // Rename to inputRef to avoid confusion with ref keyword
+        inputRef={amountInputRef}
         label="Amount"
         input={{
           id: 'amount',

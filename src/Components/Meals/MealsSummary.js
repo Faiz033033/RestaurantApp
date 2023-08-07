@@ -1,16 +1,20 @@
-import classes from './MealsSummary.module.css';
+import classes from "./MealsSummary.module.css";
 
 const MealsSummary = () => {
   return (
     <section className={classes.summary}>
-      <h2>Delicious Food, Delivered To You</h2>
+      <h2>
+        Delightful Duos: Exploring Indian Cuisine's Chicken and Paneer
+        Delicacies
+      </h2>
       <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
+        Swadisht Khana, Pyaar aur Ghar ki Yaadon ka Ehsaas - Aapka Swagat Hai
+        Hamare Virtual Dastarkhaane Mein!
       </p>
       <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
+        Toh aaiye, khushi se bhara ek bhojan ka safar tay karein, aur apne
+        parivaar aur dost ke saath is anokhe anubhav ka aanand uthayen. Aapke
+        liye hum hamesha khilte hue hain!
       </p>
     </section>
   );
