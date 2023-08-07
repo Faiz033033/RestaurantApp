@@ -12,14 +12,11 @@ const cartReducer=(state,action)=>{
   if(action.type==='ADD'){
     const updatedTotalAmount=state.totalAmount+action.item.price*action.item.amount;
 
-    // const existingCartItemIndex=state.items.findIndex((item)=>{
-    //   item.id===action.item.id}
-    // );
 
     const existingCartItemIndex=state.items.findIndex((item)=>item.id ===action.item.id);
 
     const existingCartItem=state.items[existingCartItemIndex];
-    // let updatedItem;
+    
     let updatedItems;
 
     if(existingCartItem){
@@ -32,7 +29,7 @@ const cartReducer=(state,action)=>{
       updatedItems[existingCartItemIndex]=updatedItem
 
     }else{
-      // updatedItem=[...action.item];
+      
       updatedItems=state.items.concat(action.item);
     }
 
